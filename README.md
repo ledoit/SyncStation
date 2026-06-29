@@ -44,4 +44,6 @@ Set on Vercel:
 - `NEXT_PUBLIC_APP_URL=https://syncstation.menhir-holdings.com`
 - Spotify redirect: `https://syncstation.menhir-holdings.com/strob/api/spotify/callback`
 
-See [docs/DNS.md](docs/DNS.md) for Cloudflare + custom domain setup.
+DNS setup: [docs/DNS.md](docs/DNS.md). Vercel/GitHub workflow: [../Monetization/VERCEL.md](../Monetization/VERCEL.md).
+
+**GitHub:** https://github.com/ledoit/SyncStation
