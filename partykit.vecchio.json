@@ -1,0 +1,8 @@
+{
+  "name": "vecchio-party",
+  "main": "party/vecchio/index.ts",
+  "parties": {
+    "registry": "party/vecchio/registry.ts"
+  },
+  "compatibilityDate": "2024-11-01"
+}

@@ -1,0 +1,5 @@
+{
+  "name": "strob-party",
+  "main": "party/strob/index.ts",
+  "compatibilityDate": "2024-11-01"
+}

@@ -1,0 +1,49 @@
+{
+  "name": "syncstation",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -n next,party -c blue,magenta \"next dev --turbopack\" \"partykit dev --config partykit.strob.json\"",
+    "dev:next": "next dev --turbopack",
+    "dev:party:strob": "partykit dev --config partykit.strob.json",
+    "dev:party:vecchio": "partykit dev --config partykit.vecchio.json",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "party:deploy:strob": "partykit deploy --config partykit.strob.json",
+    "party:deploy:vecchio": "partykit deploy --config partykit.vecchio.json",
+    "party:deploy": "pnpm party:deploy:strob && pnpm party:deploy:vecchio",
+    "vercel": "vercel",
+    "vercel:prod": "vercel deploy --prod"
+  },
+  "dependencies": {
+    "next": "^16.2.6",
+    "partykit": "^0.0.115",
+    "partysocket": "^1.1.19",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "workerd",
+      "sharp"
+    ]
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.5",
+    "@tailwindcss/postcss": "^4.3.0",
+    "@types/node": "^25.8.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "concurrently": "^9.2.1",
+    "eslint": "^10.4.0",
+    "eslint-config-next": "^16.2.6",
+    "postcss": "^8.5.14",
+    "tailwindcss": "^4.3.0",
+    "typescript": "^6.0.3",
+    "vercel": "^54.1.0"
+  }
+}
